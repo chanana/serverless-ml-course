@@ -17,6 +17,7 @@ streamlit = "^1.13.0"
 seaborn = "^0.12.0"
 scikit-learn = "^1.1.2"
 hopsworks = "^3.0.3"
+watchdog = "^2.1.9"
 
 
 [tool.poetry.group.dev.dependencies]
