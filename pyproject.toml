@@ -18,6 +18,8 @@ seaborn = "^0.12.0"
 scikit-learn = "^1.1.2"
 hopsworks = "^3.0.3"
 watchdog = "^2.1.9"
+gradio = "^3.4"
+typing-extensions = "^4.3.0"
 
 
 [tool.poetry.group.dev.dependencies]
