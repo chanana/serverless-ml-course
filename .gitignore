@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [0-9]*[a-zA-Z]*/
+=======
+[0-9a-f]-*/
+>>>>>>> Stashed changes
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
