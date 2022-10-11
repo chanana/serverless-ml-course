@@ -38,21 +38,29 @@ def haversine_distance(
 ) -> float:
     """Compute Haversine distance between each consecutive coordinate in (long, lat)."""
 
+    # long = long.map(lambda x: (x)) if isinstance(long, pd.Series) else radians(long)
     if isinstance(long, pd.Series):
         long = long.map(lambda x: (x))
     else:
         long = radians(long)
 
+    # lat = lat.map(lambda x: (x)) if isinstance(lat, pd.Series) else radians(lat)
     if isinstance(lat, pd.Series):
         lat = lat.map(lambda x: (x))
     else:
         lat = radians(lat)
 
+    # prev_long = (
+    #     prev_long.map(lambda x: (x))
+    #     if isinstance(long, pd.Series)
+    #     else radians(prev_long)
+    # )
     if isinstance(long, pd.Series):
         prev_long = prev_long.map(lambda x: (x))
     else:
         prev_long = radians(prev_long)
 
+    # prev_lat = prev_lat.map(lambda x: (x)) if isinstance(lat, pd.Series) else radians(prev_lat)
     if isinstance(lat, pd.Series):
         prev_lat = prev_lat.map(lambda x: (x))
     else:
